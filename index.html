@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+      <h1>Memories Gallery</h1>
+         <p class="subtitle">
+             A collection of my favorite moments
+         </p>
+
+    <div class="gallery">
+        <img src="images/image1.png" class="cricket">
+<img src="images/image2.jpg" class="coding">
+<img src="images/image3.jpg" class="travel">
+<img src="images/image4.jpg" class="nature">
+<img src="images/image5.jpg" class="coding">
+<img src="images/image6.jpg" class="travel">
+    </div>
+    <div class="lightbox">
+    <span class="close">&times;</span>
+
+    <button class="prev">&#10094;</button>
+
+    <img class="lightbox-img">
+
+    <button class="next">&#10095;</button>
+    </div>
+    <div class="filters">
+    <button onclick="filterSelection('all')">All</button>
+    <button onclick="filterSelection('nature')">Nature</button>
+    <button onclick="filterSelection('coding')">Coding</button>
+    <button onclick="filterSelection('travel')">Travel</button>
+    <button onclick="filterSelection('cricket')">Cricket</button>
+    </div>
+<button class="back-btn">← Back</button>
+<button id="theme-toggle">🌙 Dark Mode</button>
+
+<p class="counter"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
